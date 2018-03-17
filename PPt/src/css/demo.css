@@ -1,0 +1,109 @@
+/*
+* @Author: Marte
+* @Date:   2018-01-15 09:23:33
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-14 20:47:31
+*/
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+html,body{
+    width:100%;
+    height: 100%;
+}
+.wrapper,.slider-list{
+    width:100%;
+    height:100%;
+    color:#fff;
+}
+.slider-list .slider{
+    width:100%;
+    height:100%;
+    background:no-repeat;
+    background-size:cover;
+    box-sizing:border-box;
+    padding:200px;
+}
+.slider-list .slider:nth-of-type(1){
+    background-image:url('../img/bg-1.jpg');
+    //display:none;
+}
+.slider-list .slider:nth-of-type(2){
+    background-image:url('../img/bg-2.jpg');
+    display:none;
+}
+.slider-list .slider:nth-of-type(3){
+    background-image:url('../img/bg-3.jpg');
+    display:none;
+}
+.slider-list .slider .title{
+    float:left;
+    width:40%;
+    font-size:16px;
+}
+.slider-list .slider:nth-of-type(1) .title{
+    font-size:20px;
+
+}
+.slider-list .slider .image{
+    float:right;
+    width:0;
+}
+.slider-list .slider:nth-of-type(1) .image {
+    width:40%;
+}
+.slider-list .slider .image img{
+    width:100%;
+}
+.slider-btn{
+    position:absolute;
+    width:100%;
+    height:30px;
+    top:50%;
+    margin-top:-15px;
+}
+.slider-btn .right-btn,.slider-btn .left-btn{
+    position:absolute;
+    width:30px;
+    height:30px;
+    display:inline-block;
+    background:no-repeat;
+}
+.slider-btn .left-btn{
+
+    left:100px;
+    background-image:url('../img/left-btn.png');
+    background-size:contain;
+}
+.slider-btn .right-btn{
+
+    right:100px;
+    background-image:url('../img/right-btn.png');
+    background-size:contain;
+}
+.slider-order{
+    position:absolute;
+    width:100%;
+    height:20px;
+    bottom:100px;
+    text-align:center;
+}
+.slider-order ul{
+    display:inline-block;
+}
+.slider-order ul li{
+    margin-right:5px;
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    background:#ccc;
+    display:inline-block;
+}
+.slider-order ul li:nth-of-type(3){
+    margin-right:0;
+}
+.slider-order ul li.active{
+    background:#f40;
+}

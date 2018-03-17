@@ -1,0 +1,111 @@
+/*
+* @Author: Marte
+* @Date:   2018-01-02 14:37:01
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-01-02 17:31:00
+*/
+* {
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+html,body,.wrapper,.slider-list{
+    height:100%;
+    width:100%;
+    color:#fff;
+}
+/* // ppt样式 */
+.slider-list .slider{
+    width:100%;
+    height:100%;
+    background:no-repeat;
+    background-size: cover;
+    padding:200px;
+    box-sizing: border-box;
+}
+.slider-list .slider:nth-of-type(1){
+    background-image:url('../img/bg-1.jpg');
+
+}
+.slider-list .slider:nth-of-type(2){
+    background-image:url('../img/bg-2.jpg');
+    display:none;
+}
+.slider-list .slider:nth-of-type(3){
+    background-image:url('../img/bg-3.jpg');
+    display:none;
+}
+.slider-list .slider .title{
+    float: left;
+    width:40%;
+    font-size: 16px;
+}
+.slider-list .slider:nth-of-type(1) .title{
+
+    font-size: 20px;
+}
+.slider-list .slider .image{
+    float: right;
+    width:0%;
+}
+.slider-list .slider:nth-of-type(1) .image{
+    float: right;
+    width:40%;
+}
+
+.slider-list .slider .image img{
+    width:100%
+}
+/* 按钮样式 */
+.slider-btn {
+    position: absolute;
+    width:100%;
+    height:30px;
+    margin-top: -15px;
+    top:50%;
+}
+.slider-btn .left-btn,.slider-btn .right-btn{
+    height:30px;
+    width:30px;
+    display: inline-block;
+    background:no-repeat;
+    position:absolute;
+}
+.slider-btn .left-btn {
+
+    left:100px;
+    background-image:url('../img/left-btn.png');
+    background-size:contain;
+
+}
+.slider-btn .right-btn {
+
+    right:100px;
+    background-image:url('../img/right-btn.png');
+    background-size:contain;
+}
+/* 小圆点样式 */
+.slider-order {
+    position:absolute;
+    bottom:100px;
+    width:100%;
+    height:20px;
+    text-align: center;
+}
+.slider-order ul{
+    display: inline-block;
+}
+.slider-order ul li{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: #888;
+    margin-right: 20px;
+}
+.slider-order ul li:nth-of-type(3){
+    margin-right: 0px;
+}
+.slider-order ul li.active{
+    background-color:#f40;
+}
